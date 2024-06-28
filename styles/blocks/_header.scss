@@ -1,0 +1,58 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo{
+    cursor: pointer;
+  }
+  @include tablet{
+    padding: 0 40px;
+  }
+  @include mobile{
+    padding: 24px 20px;
+  }
+  &__nav{
+
+    &-list{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+    }
+
+    &-item{
+      display: flex;
+      align-items: center;
+
+    }
+    &-link{
+      padding: max(32px) max(24px);
+
+      @include hover{
+        background-color: #5221E6;
+      }
+    }
+
+  }
+  &__mobile{
+    position: relative;
+    @include reset-button;
+    @include square(48px);
+
+    @include hover{
+      background-color: #5221E6;
+    }
+    &:after{
+      content: '';
+      top: 50%;
+      right: 10%;
+      translate: -50% -50%;
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      background-color: #C4C4C4;
+      box-shadow: 0 9px #C4C4C4, 0 -9px #C4C4C4;
+
+    }
+  }
+}

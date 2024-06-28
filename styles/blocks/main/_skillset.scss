@@ -1,0 +1,61 @@
+.skillset{
+  display: flex;
+  padding: 120px 72px;
+  column-gap: 24px;
+  @include tablet{
+    flex-direction: column;
+    padding: 80px 40px;
+    row-gap: 48px;
+  }
+  @include mobile{
+    padding: 64px 20px;
+  }
+  &__type{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 48px;
+    @include mobile{
+      grid-template-columns: 1fr;
+    }
+    &-item{
+
+      &-logo{
+        min-height: 32px;
+        max-width: 32px;
+        margin-bottom: 24px;
+      }
+      &-title{
+        margin-bottom: 12px;
+      }
+
+    }
+  }
+  & p{
+    font-weight: 400;
+    font-size: 18px;
+
+    // line-height: 27px;
+    line-height: 1.5;
+    color: #8491A0;
+  }
+  & h5{
+    font-weight: 700;
+    font-size: 24px;
+
+    // line-height: 36px;
+    line-height: 1.5;
+  }
+  &__about{
+
+    max-width: 416px;
+    &-title{
+      font-weight: 700;
+      font-size: 55px;
+      @include mobile{
+        font-size: 32px;
+      }
+    }
+
+  }
+}

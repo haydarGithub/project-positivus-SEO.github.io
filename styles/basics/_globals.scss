@@ -1,0 +1,22 @@
+body{
+  font-family: "Sen",sans-serif;
+  font-weight: 400;
+  color: white;
+  background: black;
+  overflow-x: hidden;
+}
+
+a,
+button,
+input,
+textarea,
+svg, *{
+  transition-duration: var(--transition-duration);
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+input{outline: none}
